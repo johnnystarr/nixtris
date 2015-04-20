@@ -8,7 +8,8 @@ game to your favorite Unix Shell.
 A personal challenge to bring Alexey Pajitnov's Tetris to every system possible.
 
 ##Medium
-ASCII Text art, much like Alexey's [original]: http://en.wikipedia.org/wiki/Tetris#/media/File:Tetris-VeryFirstVersion.png
+ASCII Text art, much like Alexey's original: 
+![Original Tetris] (http://en.wikipedia.org/wiki/Tetris#/media/File:Tetris-VeryFirstVersion.png)
 This may potentially involve custom ASCII support for non POSIX systems.
 
 ##Goal
