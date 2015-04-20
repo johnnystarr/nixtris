@@ -8,9 +8,10 @@ game to your favorite Unix Shell.
 My personal challenge to bring Alexey Pajitnov's Tetris to every system possible.
 
 ##Medium
-ASCII Text art, much like Alexey's original: 
+Text Anyone?  Text based games is a dead art-form.  Take a look at Alexey's original: 
 ![Original Tetris](http://upload.wikimedia.org/wikipedia/en/7/7c/Tetris-VeryFirstVersion.png)
-This may potentially involve custom ASCII support for non POSIX systems.
+<br>
+Like Alexey's original, we will be using Text as the medium.  This includes but is not limited to ASCII.
 
 ##Goal
 By using ANSI C, the goal is to port Tetris to every OS and every shell out
