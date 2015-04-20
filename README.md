@@ -8,7 +8,7 @@ game to your favorite Unix Shell.
 My personal challenge to bring Alexey Pajitnov's Tetris to every system possible.
 
 ##Medium
-Text Anyone?  Text based games is a dead art-form.  Take a look at Alexey's original: 
+Text Anyone?  Text based gaming is somewhat of a dead art-form.  Take a look at Alexey's original: 
 ![Original Tetris](http://upload.wikimedia.org/wikipedia/en/7/7c/Tetris-VeryFirstVersion.png)
 <br>
 Like Alexey's original, we will be using Text as the medium.  This includes but is not limited to ASCII.
