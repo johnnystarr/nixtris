@@ -94,6 +94,16 @@ unsigned char JH[] = {
 };
 
 /*
+ * J piece, downward: ▒▒
+ *                    ▒
+ *                    ▒
+ *
+ */
+unsigned char JD[] = {
+  0x00
+};
+
+/*
  * J piece, vertical: ▒
  *                    ▒
  *                  ▒▒▒
@@ -101,8 +111,36 @@ unsigned char JH[] = {
 unsigned char JV[] = {
   0x40,
   0x40,
-  0x70
+  0x70,
+  0x00
 };
+
+/*
+ * L piece, horizontal: ▒▒▒
+ *                      ▒
+ */
+unsigned char LH[] = {
+  0x00
+};
+
+/*
+ * L piece, downward: ▒▒
+ *                     ▒
+ *                     ▒
+ */
+unsigned char LD[] = {
+  0x00
+};
+
+/*
+ * L piece, vertical: ▒
+ *                    ▒
+ *                    ▒▒
+ */
+unsigned char LV[] = {
+  0x00
+};
+
 
 /*******************************************************************************
   Prototpes
@@ -130,6 +168,7 @@ void print_logo(void) {
   printf("              ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝ \n");
   printf("\n\n");
   printf("%sCreated By Johnny Starr (c) 2015\n", colors[8]);
+  printf("Written in ANSI C so everyone can play!");
 }
 
 void test(void) {
