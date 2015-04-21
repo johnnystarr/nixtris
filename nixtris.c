@@ -105,7 +105,7 @@ unsigned char J2[] = {
 /*
  * J piece, vertical: ▒
  *                    ▒
- *                  ▒▒▒
+ *                   ▒▒
  */
 unsigned char J3[] = {
   0x40,
