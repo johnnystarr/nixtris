@@ -17,7 +17,6 @@
 *******************************************************************************/
 
 #include <stdio.h>
-#include <time.h>
 
 /* 
  * bitmap of tetris board (16-bits)
@@ -64,7 +63,7 @@ const char* colors[] = {
 /*
  * I piece, horizontal: ▒▒▒▒
  */
-unsigned char IH[] = {
+unsigned char I1[] = {
   0x78, 
   0x00
 };
@@ -75,7 +74,7 @@ unsigned char IH[] = {
  *                    ▒
  *                    ▒
  */
-unsigned char IV[] = {
+unsigned char I2[] = {
   0x40, 
   0x40, 
   0x40, 
@@ -87,7 +86,7 @@ unsigned char IV[] = {
  * J piece, horizontal: ▒▒▒
  *                        ▒
  */
-unsigned char JH[] = {
+unsigned char J1[] = {
   0x70,
   0x08,
   0x00
@@ -99,7 +98,7 @@ unsigned char JH[] = {
  *                    ▒
  *
  */
-unsigned char JD[] = {
+unsigned char J2[] = {
   0x00
 };
 
@@ -108,7 +107,7 @@ unsigned char JD[] = {
  *                    ▒
  *                  ▒▒▒
  */
-unsigned char JV[] = {
+unsigned char J3[] = {
   0x40,
   0x40,
   0x70,
@@ -119,7 +118,7 @@ unsigned char JV[] = {
  * L piece, horizontal: ▒▒▒
  *                      ▒
  */
-unsigned char LH[] = {
+unsigned char L1[] = {
   0x00
 };
 
@@ -128,7 +127,7 @@ unsigned char LH[] = {
  *                     ▒
  *                     ▒
  */
-unsigned char LD[] = {
+unsigned char L2[] = {
   0x00
 };
 
@@ -137,7 +136,7 @@ unsigned char LD[] = {
  *                    ▒
  *                    ▒▒
  */
-unsigned char LV[] = {
+unsigned char L3[] = {
   0x00
 };
 
