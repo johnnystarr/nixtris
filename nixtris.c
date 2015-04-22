@@ -18,6 +18,12 @@
 
 #include <stdio.h>
 
+/*******************************************************************************
+  OS specific configuration
+*******************************************************************************/
+typedef unsigned char byte;
+typedef unsigned short word;
+
 /* 
  * bitmap of tetris board (16-bits)
  * [00000000,00]xxxxxxx 10 bit wide tetris board
@@ -63,7 +69,7 @@ const char* colors[] = {
 /*
  * I piece, horizontal: ▒▒▒▒
  */
-unsigned char I1[] = {
+byte I1[] = {
   0x78, 
   0x00
 };
@@ -74,7 +80,7 @@ unsigned char I1[] = {
  *                    ▒
  *                    ▒
  */
-unsigned char I2[] = {
+byte I2[] = {
   0x40, 
   0x40, 
   0x40, 
@@ -86,7 +92,7 @@ unsigned char I2[] = {
  * J piece, horizontal: ▒▒▒
  *                        ▒
  */
-unsigned char J1[] = {
+byte J1[] = {
   0x70,
   0x08,
   0x00
@@ -98,7 +104,7 @@ unsigned char J1[] = {
  *                    ▒
  *
  */
-unsigned char J2[] = {
+byte J2[] = {
   0x00
 };
 
@@ -107,7 +113,7 @@ unsigned char J2[] = {
  *                    ▒
  *                   ▒▒
  */
-unsigned char J3[] = {
+byte J3[] = {
   0x40,
   0x40,
   0x70,
@@ -118,7 +124,7 @@ unsigned char J3[] = {
  * L piece, horizontal: ▒▒▒
  *                      ▒
  */
-unsigned char L1[] = {
+byte L1[] = {
   0x00
 };
 
@@ -127,7 +133,7 @@ unsigned char L1[] = {
  *                     ▒
  *                     ▒
  */
-unsigned char L2[] = {
+byte L2[] = {
   0x00
 };
 
@@ -136,7 +142,7 @@ unsigned char L2[] = {
  *                    ▒
  *                    ▒▒
  */
-unsigned char L3[] = {
+byte L3[] = {
   0x00
 };
 
@@ -158,6 +164,7 @@ int main(void) {
 }
 
 void print_logo(void) {
+  char input[50];
   printf("%s", colors[2]);
   printf("              ███╗   ██╗██╗██╗  ██╗████████╗██████╗ ██╗███████╗ \n");
   printf("              ████╗  ██║██║╚██╗██╔╝╚══██╔══╝██╔══██╗██║██╔════╝ \n"); 
@@ -167,7 +174,10 @@ void print_logo(void) {
   printf("              ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝ \n");
   printf("\n\n");
   printf("%sCreated By Johnny Starr (c) 2015\n", colors[8]);
-  printf("Written in ANSI C so everyone can play!");
+  printf("Written in ANSI C so everyone can play!\n");
+  printf("[S]tandard\n[C]lassic\n");
+  printf("> ");
+  scanf("%s", input);
 }
 
 void test(void) {
